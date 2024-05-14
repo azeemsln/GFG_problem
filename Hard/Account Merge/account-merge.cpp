@@ -6,8 +6,6 @@ using namespace std;
 // } Driver Code Ends
 //User function Template for C++
 
-
-
 class DisjointSet{
     vector<int> parent, size, rank;
 public:    
@@ -109,7 +107,6 @@ class Solution{
         return ans;
     }
 };
-
 
 //{ Driver Code Starts.
 int main()
