@@ -138,7 +138,7 @@ class Solution {
         
         if(sum>=a[i])   take = solve(i-1,sum-a[i],a,dp);
         
-        return dp[i][sum] = (take%mod + notTake%mod)%mod;
+return dp[i][sum] = (take%mod + notTake%mod)%mod;                                       
     }
 }
         
