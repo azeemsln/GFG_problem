@@ -26,8 +26,8 @@ class Solution
 {
   public int padovanSequence(int n)
     {
-        //code here.
-         if(n<3){
+        //code here. 
+        if(n<3){
             return 1;
         }
         
