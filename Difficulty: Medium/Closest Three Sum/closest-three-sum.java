@@ -41,7 +41,7 @@ public class GFG {
 class Solution {
     static int threeSumClosest(int[] array, int target) {
         // code here
-Arrays.sort(array);
+        Arrays.sort(array);
         int closest = Integer.MIN_VALUE;
         for (int i = 0; i < array.length - 2; i++) {
             int j = i + 1;
@@ -63,5 +63,6 @@ Arrays.sort(array);
                 }
             }
         }
-        return closest;    }
+        return closest;
+    }
 }
