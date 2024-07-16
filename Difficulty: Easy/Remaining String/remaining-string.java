@@ -24,7 +24,7 @@ class GFG {
 
 class Solution {
     public String printString(String s, char ch, int count) {
-        // code here\
+        // code here
         int i=0,j=0;
         String z;
         if(count>s.length()){
