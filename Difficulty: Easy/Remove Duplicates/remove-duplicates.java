@@ -23,10 +23,10 @@ class GFG {
 
 // User function Template for Java
 
-    class Solution {
-        String removeDups(String str) {
-            // code here
-             StringBuilder sb=new StringBuilder();
+class Solution {
+    String removeDups(String str) {
+        // code here
+         StringBuilder sb=new StringBuilder();
         
         for(char c:str.toCharArray())
         {
@@ -37,5 +37,5 @@ class GFG {
         }
         
         return sb.toString();
-        }
     }
+}
