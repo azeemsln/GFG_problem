@@ -60,6 +60,5 @@ class Solution {
             }
         }
         return ans;
-        
     }
 }
