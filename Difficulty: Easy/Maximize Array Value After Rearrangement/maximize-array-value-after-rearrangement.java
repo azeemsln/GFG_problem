@@ -42,7 +42,7 @@ class Solution {
 
     int Maximize(int arr[]) {
         // Complete the function
-       Arrays.sort(arr);
+        Arrays.sort(arr);
         int mod=1000000007;
         long i=0;
         long sum=0L;
