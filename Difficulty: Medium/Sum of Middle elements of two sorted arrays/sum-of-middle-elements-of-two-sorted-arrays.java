@@ -10,7 +10,6 @@ import java.util.*;
 class Solution {
     public int SumofMiddleElements(int[] arr1, int[] arr2) {
         // code here
-        // int n=arr1.length;
         ArrayList<Integer> arr=new ArrayList<Integer>();
         for(int i=0;i<arr1.length;i++){
             arr.add(arr1[i]);
