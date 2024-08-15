@@ -54,10 +54,7 @@ class Node{
 }
 */
 
-
-
 class Solution {
-    
     public Node addOne(Node head) {
         // code here.
          int carry = helper(head);
@@ -78,6 +75,5 @@ class Solution {
             return 1;
         }
         return 0;
-        
     }
 }
