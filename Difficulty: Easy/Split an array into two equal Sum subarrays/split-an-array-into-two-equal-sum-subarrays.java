@@ -23,10 +23,9 @@ class GFG {
 
 
 class Solution {
-    
     public boolean canSplit(int arr[]) {
         // code here
-         int preSum = 0;
+        int preSum = 0;
         for (int value : arr) {
             preSum += value;
         }
