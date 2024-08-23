@@ -122,13 +122,8 @@ class Node
 }*/
 class Tree
 {
-   
     //Function to return list containing elements of left view of binary tree.
-   
-      
-    
-      
-      ArrayList<Integer> leftView(Node root)
+     ArrayList<Integer> leftView(Node root)
     {
       // Your code here
       Queue<Node> q=new LinkedList<>();
