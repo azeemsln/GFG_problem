@@ -14,7 +14,7 @@ class Solution {
     // Function to sort the array according to frequency of elements.
     public ArrayList<Integer> sortByFreq(int arr[]) {
         // add your code here
-       ArrayList<Integer> list=new ArrayList<>();
+         ArrayList<Integer> list=new ArrayList<>();
         HashMap<Integer,Integer> freq=new HashMap<>();
         for(int i=0;i<arr.length;i++)
         {
