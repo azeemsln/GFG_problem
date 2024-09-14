@@ -35,7 +35,7 @@ public class Main {
 class Solution {
     void rearrange(ArrayList<Integer> arr) {
         // code here
-       List<Integer>neg=new ArrayList<>();
+        List<Integer>neg=new ArrayList<>();
       List<Integer>pos=new ArrayList<>();
       for(int i=0;i<arr.size();i++){
           if(arr.get(i)<0)
