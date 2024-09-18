@@ -57,9 +57,8 @@ class Solution
                     st.push(ch);
             }
         }
-        if(st.isEmpty()){
+        if(st.isEmpty())
             return true;
-        }
         return false;
     }
 }
