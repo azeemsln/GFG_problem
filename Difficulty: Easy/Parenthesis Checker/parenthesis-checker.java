@@ -38,7 +38,7 @@ class Solution
     static boolean ispar(String x)
     {
         // add your code here
-        Stack<Character> st=new Stack<>();
+        Stack<Character> st=new Stack();
         for(int i=0;i<x.length();i++){
             char ch=x.charAt(i);
             if(st.isEmpty())
