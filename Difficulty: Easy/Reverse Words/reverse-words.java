@@ -38,6 +38,5 @@ class Solution {
         }
         String res=String.join(".",s);
         return res;
-        
     }
 }
