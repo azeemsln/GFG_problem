@@ -157,7 +157,7 @@ class Solution {
     // Function to clone a linked list with next and random pointer.
     Node copyList(Node head) {
         // your code here
-         if (head==null) return null;
+        if (head==null) return null;
         Node current=head;
         while(current!=null){
             Node copy=new Node(current.data);
