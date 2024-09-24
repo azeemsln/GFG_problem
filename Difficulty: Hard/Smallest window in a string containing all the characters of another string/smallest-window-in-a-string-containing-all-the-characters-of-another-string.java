@@ -27,7 +27,7 @@ class Solution
     public static String smallestWindow(String s, String p)
     {
         // Your code here
-        int m=s.length(),n=p.length();
+         int m=s.length(),n=p.length();
         if(m<n) return new String("-1");
         int arr2[]=new int[26];
         int unmatched=n;
