@@ -79,7 +79,7 @@ class Solution {
     // Function to check whether the list is palindrome.
     boolean isPalindrome(Node head) {
         // Your code here
-        int n=0;
+         int n=0;
         Node temp=head;
         Stack<Integer> s=new Stack();
         while(temp!=null){
