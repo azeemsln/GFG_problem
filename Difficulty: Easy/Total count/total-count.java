@@ -12,15 +12,14 @@ class Solution {
     int totalCount(int k, int[] arr) {
         // code here
         int res=0;
-        
-        int n=arr.length;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<arr.length;i++){
             int count=0;
             if(arr[i]%k==0){
                 count=arr[i]/k;
             }
-            else
-                 count=arr[i]/k+1;
+            else{
+                count=arr[i]/k+1;
+            }
             res=res+count;
         }
         return res;
