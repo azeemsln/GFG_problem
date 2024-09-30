@@ -113,66 +113,50 @@ class Solution {
     public List<Integer> merge(Node root1, Node root2) {
         // Write your code here
          List<Integer> list1 = new ArrayList<>();
-        // List to store in-order traversal of second BST
         List<Integer> list2 = new ArrayList<>();
         
-        // Perform in-order traversal on the first BST
-        inOrder(root1, list1);
-        // Perform in-order traversal on the second BST
-        inOrder(root2, list2);
+        inOrderTraversal(root1, list1);
+        inOrderTraversal(root2, list2);
         
-        // Merge the two sorted lists and return the result
-        return merge(list1, list2);
+        return mergedSortedList(list1, list2);
     }
     
-    // Helper function to perform in-order traversal of a BST
-    private void inOrder(Node root, List<Integer> list) {
-        // Base case: if the root is null, return
-        if (root == null) {
+    private void inOrderTraversal(Node root, List<Integer> list){
+        if(root==null){
             return;
         }
         
-        // Traverse the left subtree
-        inOrder(root.left, list);
-        // Add the root data to the list
+        inOrderTraversal(root.left, list);
         list.add(root.data);
-        // Traverse the right subtree
-        inOrder(root.right, list);
+        inOrderTraversal(root.right, list);
     }
     
-    // Helper function to merge two sorted lists
-    private List<Integer> merge(List<Integer> list1, List<Integer> list2) {
-        // List to store the merged result
-        List<Integer> ans = new ArrayList<>();
-        
-        int ind1 = 0, ind2 = 0;
-        
-        // Merge the lists by comparing elements one by one
-        while (ind1 < list1.size() && ind2 < list2.size()) {
-            if (list1.get(ind1) < list2.get(ind2)) {
-                // Add the smaller element to the result list
-                ans.add(list1.get(ind1));
-                ind1++;
+    private List<Integer> mergedSortedList(List<Integer> list1, List<Integer> list2) {
+        List<Integer> mergedList = new ArrayList<>();
+        int i = 0, j = 0;
+
+        while (i < list1.size() && j < list2.size()) {
+            if (list1.get(i) <= list2.get(j)) {
+                mergedList.add(list1.get(i));
+                i++;
             } else {
-                // Add the smaller element to the result list
-                ans.add(list2.get(ind2));
-                ind2++;
+                mergedList.add(list2.get(j));
+                j++;
             }
         }
-        
-        // Add remaining elements from list1 (if any)
-        while (ind1 < list1.size()) {
-            ans.add(list1.get(ind1));
-            ind1++;
+
+        // Add remaining elements from list1
+        while (i < list1.size()) {
+            mergedList.add(list1.get(i));
+            i++;
         }
-        
-        // Add remaining elements from list2 (if any)
-        while (ind2 < list2.size()) {
-            ans.add(list2.get(ind2));
-            ind2++;
+
+        // Add remaining elements from list2
+        while (j < list2.size()) {
+            mergedList.add(list2.get(j));
+            j++;
         }
-        
-        // Return the merged list
-        return ans;
+
+        return mergedList;
     }
 }
