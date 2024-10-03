@@ -33,7 +33,7 @@ class Solution {
     // Function to find the majority elements in the array
     public List<Integer> findMajority(List<Integer> nums) {
         // Your code goes here.
-         List<Integer>list = new ArrayList<Integer>();
+          List<Integer>list = new ArrayList<Integer>();
         Collections.sort(nums);
         int n = nums.size()/3;
         int prev=nums.get(0);
