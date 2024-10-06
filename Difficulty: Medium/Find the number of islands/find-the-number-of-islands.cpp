@@ -5,7 +5,7 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    void dfs(int i, int j, int n, int m, vector<int> &dr, vector<int> &dc, vector<vector<int>> &vis, vector<vector<char>> &grid) {
+   void dfs(int i, int j, int n, int m, vector<int> &dr, vector<int> &dc, vector<vector<int>> &vis, vector<vector<char>> &grid) {
         vis[i][j] = 1;
         
         for(int a = 0; a < 8; a++) {
