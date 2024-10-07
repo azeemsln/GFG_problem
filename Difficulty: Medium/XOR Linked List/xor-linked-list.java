@@ -60,7 +60,7 @@ class Solution {
     // function should insert the data to the front of the list
     static Node insert(Node head, int data) {
         // Code Here.
-        Node a = new Node(data);
+         Node a = new Node(data);
         a.npx = head;
         return a;
     }
