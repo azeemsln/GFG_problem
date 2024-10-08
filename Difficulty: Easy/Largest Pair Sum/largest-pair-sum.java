@@ -57,7 +57,7 @@ class GFG {
 
 class Solution {
     public static int pairsum(int[] arr) {
-        // code her
+        // code here
         int n=arr.length;
         int max=Integer.MIN_VALUE;
         int max2=Integer.MIN_VALUE;
