@@ -7,7 +7,7 @@ import java.util.*;
 
 // } Driver Code Ends
 // User function Template for Java
-    
+
 class Solution {
     // Function to count the number of subarrays which adds to the given sum.
     static int subArraySum(int arr[], int tar) {
