@@ -33,23 +33,21 @@ class Solution {
     // Return the sum of last k nodes
     public int sumOfLastN_Nodes(Node head, int n) {
         // write code here
-        int sum=0;
-        Node temp=head;
-        int m=0;
-        while(temp!=null){
-            m++;
-            temp=temp.next;
-        }
-        int[] arr=new int[m];
-        temp=head;
-        for(int i=0;i<m;i++){
-            arr[i]=temp.data;
-            temp=temp.next;
-        }
-        for(int i=m-1;i>=m-n;i--){
-            sum+=arr[i];
+        Node fast = head;
+        Node slow = head;
+        int sum = 0;
+        int count = 0;
+        while(fast!=null){
+            sum = sum + fast.data;
+            fast = fast.next;
+            if(count>=n){
+                sum = sum - slow.data;
+                slow = slow.next;
+            }
+            count++;
         }
         return sum;
+
     }
 }
 
