@@ -41,7 +41,7 @@ class Main {
 class Solution {
     public static ArrayList<Integer> alternateSort(int[] arr) {
 
-        // Your code goes 
+        // Your code goes here
         ArrayList<Integer> li=new ArrayList<>();
         int n=arr.length;
         Arrays.sort(arr);
