@@ -40,15 +40,13 @@ System.out.println("~");
 class Solution {
     ArrayList<Integer> removeDuplicate(int arr[]) {
         // code here
-        HashMap<Integer,Integer> map=new HashMap<>();
         ArrayList<Integer> li=new ArrayList<>();
         for(int i=0;i<arr.length;i++){
-            if(map.containsKey(arr[i])){
+            if(li.contains(arr[i])){
                 continue;
             }
             else{
                 li.add(arr[i]);
-                map.put(arr[i],1);
             }
         }
         return li;
