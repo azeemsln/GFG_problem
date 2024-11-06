@@ -119,8 +119,7 @@ class Tree
 class Solution {
     public static int treePathsSum(Node root) {
         // add code here.
-        
-          return solve(root, 0);
+        return solve(root, 0);
     }
     public static int solve(Node root, int val)
     {
