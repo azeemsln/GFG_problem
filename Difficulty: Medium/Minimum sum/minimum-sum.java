@@ -70,6 +70,5 @@ class Solution {
 
         // Reverse the result to get the final answer
         return result.reverse().toString();
-        
     }
 }
