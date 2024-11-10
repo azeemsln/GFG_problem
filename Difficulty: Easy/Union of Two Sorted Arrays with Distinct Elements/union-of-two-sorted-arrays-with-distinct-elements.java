@@ -62,7 +62,6 @@ class Solution {
             while (j > 0 && j < m && b[j] == b[j - 1]) {
                 j++;
             }
-            
             if (i < n && j < m) {
                 if (a[i] == b[j]) {
                     ans.add(a[i]);
@@ -77,7 +76,6 @@ class Solution {
                 }
             }
         }
-        
         // Process remaining elements of 'a'
         while (i < n) {
             if (i == 0 || a[i] != a[i - 1]) {
@@ -85,7 +83,6 @@ class Solution {
             }
             i++;
         }
-        
         // Process remaining elements of 'b'
         while (j < m) {
             if (j == 0 || b[j] != b[j - 1]) {
@@ -93,7 +90,6 @@ class Solution {
             }
             j++;
         }
-        
         return ans;
     }
 }
