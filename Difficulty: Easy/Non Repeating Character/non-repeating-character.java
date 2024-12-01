@@ -34,7 +34,7 @@ class Solution {
     // Function to find the first non-repeating character in a string.
     static char nonRepeatingChar(String s) {
         // Your code here
-         int freq[]=new int[26];
+        int freq[]=new int[26];
          for(int i=0;i<s.length();i++){
              freq[s.charAt(i)-'a']++;
          }
