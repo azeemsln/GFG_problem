@@ -30,23 +30,7 @@ class GFG {
 
 // User function Template for Java
 
-// class Solution {
-
-//     ArrayList<Integer> search(String pat, String txt) {
-//         // your code here
-//         ArrayList<Integer> res=new ArrayList<>();
-//         int p=pat.length();
-//         for(int i=0,j=p;i<txt.length() && j<=txt.length();j++,i++){
-//             if(txt.substring(i,j).equals(pat)){
-//                 res.add(i);
-//             }
-            
-//         }
-//         return res;
-//     }
-// }
 class Solution {
-
     ArrayList<Integer> search(String pat, String txt) {
         // your code here
          ArrayList<Integer> result = new ArrayList<>();
