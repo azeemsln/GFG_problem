@@ -34,11 +34,13 @@ class GFG {
 class Solution {
     public List<int[]> mergeOverlap(int[][] arr) {
         // Code here // Code here
-        List<int[]> ans=new ArrayList<>();
-        int n=arr.length;
         Arrays.sort(arr,(a,b)->Integer.compare(a[0],b[0]));
+        
+        List<int[]>ans=new ArrayList<>();
+        int n=arr.length;
+        
         for(int i=0;i<n;i++){
-             int start=arr[i][0];
+            int start=arr[i][0];
             int end=arr[i][1];
             
             if(!ans.isEmpty() && ans.get(ans.size()-1)[1]>=start){
@@ -49,7 +51,6 @@ class Solution {
                 ans.add(new int[]{start,end});
             }
         }
-        return ans;    
-        
+        return ans;
     }
 }
