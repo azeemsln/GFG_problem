@@ -46,20 +46,18 @@ class Main {
 class Solution {
     public static int findUnion(int a[], int b[]) {
         // code here
-        HashMap<Integer,Integer> map=new HashMap<>();
-        int x=1;
-        for(int i=0;i<a.length;i++){
-            if(map.containsKey(a[i])){
-                continue;
-            }
-            map.put(a[i],x++);
-        }
-        for(int i=0;i<b.length;i++){
-            if(map.containsKey(b[i])){
-                continue;
-            }
-            map.put(b[i],x++);
-        }
-        return x-1;
+        Set<Integer>st1 = new HashSet<>();
+        
+      
+       for(Integer el1: a){
+           st1.add(el1);
+       }
+       
+       for(Integer el2: b){
+           st1.add(el2);
+       }
+       
+      
+        return st1.size();
     }
 }
