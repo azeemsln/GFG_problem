@@ -29,7 +29,8 @@ class Solution {
 
     // Function to return length of longest subsequence of consecutive integers.
     public int longestConsecutive(int[] arr) {
-        // code here
+        // code here 
+        
         Arrays.sort(arr);
        int count=1,max=0;
        for(int i=1;i<arr.length;i++){
@@ -41,6 +42,7 @@ class Solution {
            }
        }
        max=Math.max(count,max);
-       return max;
+       return max; 
+       
     }
 }
