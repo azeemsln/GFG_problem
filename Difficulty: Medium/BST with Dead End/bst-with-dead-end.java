@@ -23,6 +23,5 @@ class Solution {
         }
         
         return helper(root.left,minVal,root.data-1)||helper(root.right,root.data+1,maxVal);
-        
     }
 }
