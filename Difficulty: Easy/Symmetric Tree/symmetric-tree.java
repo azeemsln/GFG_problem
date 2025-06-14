@@ -14,7 +14,7 @@ class Node{
 class Solution {
     public boolean isSymmetric(Node root) {
         // Code here
-         if(root==null) return true;
+        if(root==null) return true;
         return help(root.left,root.right);
     }
     static boolean help(Node l,Node r){
