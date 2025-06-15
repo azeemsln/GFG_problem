@@ -1,7 +1,7 @@
 class Solution {
     int smallestDivisor(int[] arr, int k) {
         // Code here
-Arrays.sort(arr);
+        Arrays.sort(arr);
         // System.out.println(Arrays.toString(arr));
         int n = arr.length;
         int start = 1;
